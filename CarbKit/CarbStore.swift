@@ -125,13 +125,13 @@ public final class CarbStore: HealthKitSampleStore {
     public var insulinSensitivitySchedule: InsulinSensitivitySchedule?
 
     /// The expected delay in the appearance of glucose effects, accounting for both digestion and sensor lag
-    public var delay: TimeInterval = TimeInterval(minutes: 10)
+    public var delay: TimeInterval = TimeInterval(minutes: 5)
 
     /// The interval between effect values to use for the calculated timelines.
     private(set) public var delta: TimeInterval = TimeInterval(minutes: 5)
 
     /// The factor by which the entered absorption time can be extended to accomodate slower-than-expected absorption
-    public var absorptionTimeOverrun: Double = 1.5
+    public var absorptionTimeOverrun: Double = 2
 
     /// The longest expected absorption time interval for carbohydrates. Defaults to 8 hours.
     public var maximumAbsorptionTimeInterval: TimeInterval {
