@@ -396,13 +396,14 @@ extension AddEditOverrideTableViewController {
     private func setupBarButtonItems() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save))
         updateSaveButtonEnabled()
-
+/*
         switch inputMode {
         case .newPreset:
             navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
         default:
             break
         }
+ */
     }
 
     private var configuredSettings: TemporaryScheduleOverrideSettings? {
