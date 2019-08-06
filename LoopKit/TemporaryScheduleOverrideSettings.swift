@@ -14,7 +14,7 @@ public struct TemporaryScheduleOverrideSettings: Equatable {
     public var insulinNeedsScaleFactor: Double?
 
     public var basalRateMultiplier: Double? {
-        return insulinNeedsScaleFactor
+        return 1.0
     }
 
     public var insulinSensitivityMultiplier: Double? {
